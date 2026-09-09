@@ -1,0 +1,67 @@
+<section class="section-sponsors" id="patrocinadores">
+  <div class="container">
+    <span class="section-kicker">Parceiros</span>
+    <h2 class="sponsors-title">Sponsors</h2>
+
+    <!-- Gold Tier -->
+    {{ with site.Data.sponsors.gold }}
+    <div class="tier-block">
+      <span class="tier-label">Gold</span>
+      <div class="sponsor-grid-gold">
+        {{ range . }}
+        <div class="sponsor-card-gold">
+          {{ if .logo }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="sponsor-logo-img">
+            </a>
+          {{ else }}
+            <span>{{ .name }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Silver Tier -->
+    {{ with site.Data.sponsors.silver }}
+    <div class="tier-block">
+      <span class="tier-label">Silver</span>
+      <div class="sponsor-grid-silver">
+        {{ range . }}
+        <div class="sponsor-card-silver">
+          {{ if .logo }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="sponsor-logo-img">
+            </a>
+          {{ else }}
+            <span>{{ .name }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Bronze Tier -->
+    {{ with site.Data.sponsors.bronze }}
+    <div class="tier-block">
+      <span class="tier-label">Bronze</span>
+      <div class="sponsor-grid-bronze">
+        {{ range . }}
+        <div class="sponsor-card-bronze">
+          {{ if .logo }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="sponsor-logo-img">
+            </a>
+          {{ else }}
+            <span>{{ .name }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" rx="16" fill="#F3F4F6"/>
+  <circle cx="120" cy="95" r="40" fill="#D1D5DB"/>
+  <path d="M48 200C48 162.445 78.4446 132 116 132H124C161.555 132 192 162.445 192 200V208H48V200Z" fill="#D1D5DB"/>
+  <rect x="60" y="212" width="120" height="12" rx="6" fill="#E5E7EB"/>
+  <text x="120" y="105" text-anchor="middle" fill="#6B7280" font-family="system-ui, sans-serif" font-size="14" font-weight="600">A anunciar</text>
+</svg>

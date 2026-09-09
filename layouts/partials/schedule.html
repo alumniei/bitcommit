@@ -1,0 +1,21 @@
+<section class="section-schedule" id="programa">
+  <div class="container">
+    <span class="section-kicker">Programa</span>
+    <div class="schedule-list">
+      {{ range site.Data.schedule }}
+      <div class="schedule-card">
+        <div class="schedule-time-block">
+          <time class="schedule-time">{{ .time }}</time>
+          <span class="schedule-type">{{ .type }}</span>
+        </div>
+        <div class="schedule-info-block">
+          <h3 class="schedule-title">{{ .title }}</h3>
+          {{ if .description }}
+            <p class="schedule-description">{{ .description }}</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

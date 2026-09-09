@@ -1,0 +1,36 @@
+{{ if site.Data.speakers }}
+<section class="section-speakers" id="speakers">
+  <div class="container">
+    <div class="speakers-header">
+      <span class="section-kicker">Oradores</span>
+      <h2 class="speakers-title">Speakers</h2>
+    </div>
+    <div class="speakers-grid">
+      {{ range site.Data.speakers }}
+      <article class="speaker-card" id="{{ .id }}">
+        <div class="speaker-image-wrapper">
+          {{ if .image }}
+            <img src="{{ .image | relURL }}" alt="{{ .name }}" class="speaker-image" loading="lazy" width="320" height="320">
+          {{ else }}
+            <img src="{{ "images/speakers/placeholder.svg" | relURL }}" alt="{{ .name }} (Placeholder)" class="speaker-image" loading="lazy" width="320" height="320">
+          {{ end }}
+        </div>
+        <div class="speaker-body">
+          {{ if .talk_time }}
+            <span class="speaker-badge-time">{{ .talk_time }}</span>
+          {{ end }}
+          <h3 class="speaker-name">{{ .name }}</h3>
+          <p class="speaker-role">{{ .role }}{{ if .company }} · {{ .company }}{{ end }}</p>
+          {{ if .talk_title }}
+            <p class="speaker-talk"><strong>Sessão:</strong> {{ .talk_title }}</p>
+          {{ end }}
+          {{ if .bio }}
+            <p class="speaker-bio">{{ .bio }}</p>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

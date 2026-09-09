@@ -1,12 +1,14 @@
 baseURL = 'https://bitcommit.alumniei.pt/'
-languageCode = 'en-us'
-title = 'BitCommit 2026 — The Developer & Infrastructure Conference'
+languageCode = 'pt-pt'
+title = 'BitCommit 2026'
 
 [params]
-  description = 'BitCommit is the premier annual conference for developers, site reliability engineers, and open-source innovators.'
-  event_date = '2026-11-14'
-  event_date_display = 'November 14-15, 2026'
-  location = 'Lisbon, Portugal & Online'
-  cfp_open = true
-  cfp_url = 'https://papercall.io/bitcommit2026'
-  tickets_url = '#tickets'
+  description = 'BitCommit é um evento de tecnologia focado em palestras e workshops onde os participantes entram em contacto com diversas tecnologias e conceitos, focando-se nas skills técnicas e no contacto com empresas de topo a nível nacional e internacional.'
+  event_date_display = '10 Outubro 2026'
+  event_time = '14:30'
+  location_venue = 'Founders Founders'
+  location_city = 'Porto'
+  location_address = 'R. da Constituição 346, 4200-192 Porto'
+  tickets_url = 'https://bitcommit.alumniei.pt/'
+  email = 'geral@alumniei.pt'
+  copyright_year = '2026'

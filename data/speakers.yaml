@@ -1,0 +1,26 @@
+- id: "speaker-1"
+  name: "Oradora Convidada"
+  role: "Keynote Speaker"
+  company: "Empresa / Universidade"
+  image: "/images/speakers/speaker-1.png"
+  talk_title: "Palestra (título)"
+  talk_time: "15:00"
+  bio: "Especialista convidada para partilhar a sua experiência e visão tecnológica no BitCommit 2026."
+
+- id: "speaker-2"
+  name: "Orador A Anunciar"
+  role: "AI & Software Engineer"
+  company: "Tech Innovation"
+  image: "" # Placeholder: Adicione a imagem em static/images/speakers/
+  talk_title: "IA Generativa"
+  talk_time: "17:00"
+  bio: "Como a inteligência artificial generativa está a transformar o desenvolvimento de software e fluxos de engenharia."
+
+- id: "speaker-3"
+  name: "Orador A Anunciar"
+  role: "Open Source Contributor"
+  company: "Open Source Ecosystem"
+  image: "" # Placeholder: Adicione a imagem em static/images/speakers/
+  talk_title: "Open Source"
+  talk_time: "17:45"
+  bio: "Estratégias para contribuir em projetos de código aberto e o seu impacto no ecossistema global."

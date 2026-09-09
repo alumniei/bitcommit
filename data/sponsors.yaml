@@ -1,0 +1,32 @@
+gold:
+  - name: "Gold Sponsor A"
+    logo: "" # Coloque o ficheiro em static/images/sponsors/ para substituir o placeholder
+    url: "#"
+  - name: "Gold Sponsor B"
+    logo: ""
+    url: "#"
+
+silver:
+  - name: "Silver Sponsor A"
+    logo: ""
+    url: "#"
+  - name: "Silver Sponsor B"
+    logo: ""
+    url: "#"
+  - name: "Silver Sponsor C"
+    logo: ""
+    url: "#"
+
+bronze:
+  - name: "Bronze Sponsor A"
+    logo: ""
+    url: "#"
+  - name: "Bronze Sponsor B"
+    logo: ""
+    url: "#"
+  - name: "Bronze Sponsor C"
+    logo: ""
+    url: "#"
+  - name: "Bronze Sponsor D"
+    logo: ""
+    url: "#"
