@@ -1,13 +1,16 @@
 <footer class="site-footer" id="contactos">
   <div class="container">
     <div class="footer-grid">
-      <!-- AlumniEI Info -->
+      <!-- AlumniEI Info & Copyright -->
       <div class="footer-col footer-col-brand">
         <a href="https://alumniei.pt" target="_blank" rel="noopener noreferrer">
           <img src="{{ "images/alumniei.png" | relURL }}" alt="AlumniEI-FEUP" class="footer-logo">
         </a>
         <p class="footer-desc">
           Associação de Antigos Alunos de Engenharia Informática da Faculdade de Engenharia da Universidade do Porto.
+        </p>
+        <p class="footer-copyright">
+          Copyright &copy; {{ site.Params.copyright_year | default "2026" }} BitCommit · AlumniEI-FEUP.<br>Todos os direitos reservados.
         </p>
       </div>
 
@@ -64,12 +67,6 @@
           <li><a href="https://paginas.fe.up.pt/~feuplink/feuplink/" target="_blank" rel="noopener noreferrer" class="footer-link">FEUPLink</a></li>
         </ul>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p class="footer-copyright">
-        Copyright &copy; {{ site.Params.copyright_year | default "2026" }} BitCommit · AlumniEI-FEUP. Todos os direitos reservados.
-      </p>
     </div>
   </div>
 </footer>
