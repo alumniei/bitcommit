@@ -112,8 +112,8 @@ img {
 }
 
 .hero-logo {
-  max-width: 390px;
-  width: 85%;
+  max-width: 540px;
+  width: 92%;
   height: auto;
   object-fit: contain;
 }
