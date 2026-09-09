@@ -3,9 +3,9 @@
   role: "Keynote Speaker"
   company: "Empresa / Universidade"
   image: "/images/speakers/speaker-1.png"
-  talk_title: "Palestra (título)"
+  talk_title: "A ser anunciado"
   talk_time: "15:00"
-  bio: "Especialista convidada para partilhar a sua experiência e visão tecnológica no BitCommit 2026."
+  bio: "Orador(a) e tema a ser anunciados brevemente."
 
 - id: "speaker-2"
   name: "Orador A Anunciar"

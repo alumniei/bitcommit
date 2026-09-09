@@ -6,8 +6,8 @@
 
 - time: "15:00"
   type: "Palestra"
-  title: "Palestra (título)"
-  description: "Descrição da palestra"
+  title: "A ser anunciado"
+  description: "Tema e orador a ser anunciados brevemente."
   speaker_id: "speaker-1"
 
 - time: "15:30"
