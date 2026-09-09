@@ -1,6 +1,7 @@
 baseURL = 'https://bitcommit.alumniei.pt/'
 languageCode = 'pt-pt'
 title = 'BitCommit 2026'
+disableKinds = ['taxonomy', 'term']
 
 [params]
   description = 'BitCommit é um evento de tecnologia focado em palestras e workshops onde os participantes entram em contacto com diversas tecnologias e conceitos, focando-se nas skills técnicas e no contacto com empresas de topo a nível nacional e internacional.'

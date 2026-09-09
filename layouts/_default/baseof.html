@@ -6,6 +6,11 @@
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
   <meta name="description" content="{{ site.Params.description }}">
 
+  <!-- Security & Canonical -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" type="image/png" href="{{ "images/mascot.png" | relURL }}">
+
   <!-- Open Graph / Meta -->
   <meta property="og:title" content="{{ site.Title }}">
   <meta property="og:description" content="{{ site.Params.description }}">
