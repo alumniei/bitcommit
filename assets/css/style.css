@@ -106,14 +106,15 @@ img {
 }
 
 .hero-logo-wrapper {
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .hero-logo {
-  max-width: 540px;
-  width: 92%;
+  max-width: 760px;
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
