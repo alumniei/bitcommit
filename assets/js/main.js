@@ -47,4 +47,25 @@ document.addEventListener('DOMContentLoaded', () => {
       track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
   }
+
+  // --- 3. Mobile Navigation Menu Toggle ---
+  const menuToggle = document.getElementById('headerMenuToggle');
+  const navCollapse = document.getElementById('headerNavCollapse');
+
+  if (menuToggle && navCollapse) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navCollapse.classList.toggle('is-open');
+      menuToggle.classList.toggle('is-active', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close menu when clicking on any navigation link
+    navCollapse.querySelectorAll('.page-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navCollapse.classList.remove('is-open');
+        menuToggle.classList.remove('is-active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 });
