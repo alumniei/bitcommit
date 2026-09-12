@@ -4,7 +4,7 @@ title = 'BitCommit 2026'
 disableKinds = ['taxonomy', 'term']
 
 [params]
-  description = 'BitCommit é um evento de tecnologia focado em palestras e workshops onde os participantes entram em contacto com diversas tecnologias e conceitos, focando-se nas skills técnicas e no contacto com empresas de topo a nível nacional e internacional.'
+  description = 'A BitCommit é uma mini-conferência, destinada a profissionais da área da informática, que tem o intuito de discutir IA na perspetiva de como nos afeta na vida profissional, em áreas como empregabilidade, saúde mental, aprendizagem e muitas outras. Neste evento, queremos desviar-nos da parte técnica e focar naquilo que consideramos mais importante: as pessoas! Por isso, a AlumniEI (Associação de Antigos Alunos de Engenharia Informática da FEUP) preparou este evento para criar um espaço para se discutir os desafios que enfrentamos nestas áreas e como podemos superá-los.'
   event_date_display = '10 Outubro 2026'
   event_time = '14:30'
   location_venue = 'Founders Founders'
