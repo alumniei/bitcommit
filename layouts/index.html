@@ -4,6 +4,8 @@
   {{ partial "event_info.html" . }}
   {{ partial "about.html" . }}
   {{ partial "schedule.html" . }}
-  {{ partial "sponsors.html" . }}
+  {{ if site.Params.enable_sponsors }}
+    {{ partial "sponsors.html" . }}
+  {{ end }}
 </div>
 {{ end }}

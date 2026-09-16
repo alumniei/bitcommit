@@ -3,7 +3,7 @@
     <div class="header-container">
       <div class="header-logo-block">
         <a href="#topo" class="header-logo-link" aria-label="BitCommit 2026">
-          <img src="{{ "images/logo.svg" | relURL }}" alt="BitCommit 2026" class="header-logo">
+          <img src="{{ "images/logo-light-cropped-no-background.png" | relURL }}" alt="BitCommit 2026" class="header-logo">
         </a>
       </div>
 
@@ -17,7 +17,9 @@
           <li><a class="page-link" href="#local">Data e Local</a></li>
           <li><a class="page-link" href="#sobre">Sobre</a></li>
           <li><a class="page-link" href="#programa">Programa</a></li>
+          {{ if site.Params.enable_sponsors }}
           <li><a class="page-link" href="#patrocinadores">Patrocinadores</a></li>
+          {{ end }}
           <li><a class="page-link" href="#contactos">Contactos</a></li>
         </ul>
 

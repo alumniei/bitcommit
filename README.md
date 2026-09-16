@@ -41,6 +41,7 @@ O website é uma *single-page application* limpa e moderna focada na agenda e in
      - **Gold:** 2 patrocinadores (cartões com contorno âmbar).
      - **Silver:** 3 patrocinadores.
      - **Bronze:** 4 patrocinadores.
+   - Pode ser ocultada/apresentada através do feature toggle `enable_sponsors` em `hugo.toml`.
 
 6. **Rodapé & Contactos**:
    - Email institucional (`geral@alumniei.pt`) e localização.
@@ -121,3 +122,11 @@ gold:
     url: "https://empresa.com"
 ```
 *(Enquanto o logótipo não for adicionado, o cartão exibe uma caixa com o nome correspondente ao Figma).*
+
+#### Feature Toggle (Ativar / Desativar Patrocinadores)
+A secção de patrocinadores e o respetivo link na barra de navegação podem ser ativados ou desativados através do parâmetro `enable_sponsors` no ficheiro [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+
+```toml
+[params]
+  enable_sponsors = false # Defina como true para exibir ou false para ocultar
+```
