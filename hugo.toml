@@ -13,3 +13,4 @@ disableKinds = ['taxonomy', 'term']
   tickets_url = 'https://bitcommit.alumniei.pt/'
   email = 'geral@alumniei.pt'
   copyright_year = '2026'
+  enable_sponsors = false
