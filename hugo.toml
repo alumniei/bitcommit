@@ -15,4 +15,4 @@ disableKinds = ['taxonomy', 'term']
   email = 'geral@alumniei.pt'
   copyright_year = '2026'
   enable_sponsors = false
-  enable_speakers = false
+  enable_speakers = true
