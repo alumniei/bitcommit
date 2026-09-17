@@ -436,6 +436,31 @@ img {
   line-height: 1.2;
 }
 
+a.info-card.info-card-link {
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+a.info-card.info-card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+.info-card-action {
+  margin-left: auto;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a.info-card.info-card-link:hover .info-card-action {
+  color: var(--color-primary-purple);
+  transform: translate(2px, -2px);
+}
+
 /* ==========================================================================
    Sobre Section
    ========================================================================== */

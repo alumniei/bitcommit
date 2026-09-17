@@ -10,6 +10,7 @@ disableKinds = ['taxonomy', 'term']
   location_venue = 'Founders Founders'
   location_city = 'Porto'
   location_address = 'R. da Constituição 346, 4200-192 Porto'
+  location_maps_url = 'https://maps.app.goo.gl/bKAY6yicGjBpS5H96'
   tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
   tickets_button_text = 'Garante já o teu bilhete'
   email = 'geral@alumniei.pt'
