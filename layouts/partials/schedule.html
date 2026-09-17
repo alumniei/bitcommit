@@ -15,6 +15,59 @@
           {{ end }}
         </div>
       </div>
+
+      {{ if and site.Params.enable_speakers .speakers }}
+      <div class="schedule-speakers-card">
+        {{ if .speakers_title }}
+          <h4 class="schedule-speakers-title">{{ .speakers_title }}</h4>
+        {{ end }}
+        {{ if .speakers_subtitle }}
+          <p class="schedule-speakers-subtitle">{{ .speakers_subtitle }}</p>
+        {{ end }}
+        <div class="schedule-speakers-grid">
+          {{ range .speakers }}
+          <div class="agenda-speaker-card">
+            <div class="agenda-speaker-avatar-wrap">
+              {{ if .image }}
+                <img src="{{ .image | relURL }}" alt="{{ .name }}" class="agenda-speaker-avatar" width="56" height="56" loading="lazy">
+              {{ else }}
+                <img src="{{ "images/speakers/placeholder.svg" | relURL }}" alt="{{ .name }}" class="agenda-speaker-avatar" width="56" height="56" loading="lazy">
+              {{ end }}
+            </div>
+            <div class="agenda-speaker-info">
+              <div class="agenda-speaker-header">
+                <span class="agenda-speaker-name">{{ .name }}</span>
+                {{ if .company }}
+                  <span class="agenda-speaker-sep">|</span>
+                  <span class="agenda-speaker-company">{{ .company }}</span>
+                {{ end }}
+              </div>
+              {{ if .role }}
+                <div class="agenda-speaker-role-wrap">
+                  {{ if eq (lower .role) "moderator" }}
+                    <span class="agenda-speaker-badge moderator">{{ .role }}</span>
+                  {{ else }}
+                    <span class="agenda-speaker-role">{{ .role }}</span>
+                  {{ end }}
+                </div>
+              {{ end }}
+              {{ if .bio }}
+                <p class="agenda-speaker-bio">{{ .bio }}</p>
+              {{ end }}
+              {{ if .linkedin }}
+                <a href="{{ .linkedin }}" target="_blank" rel="noopener noreferrer" class="agenda-speaker-linkedin" aria-label="{{ .name }} LinkedIn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28Z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
       {{ end }}
     </div>
   </div>
