@@ -525,29 +525,114 @@ img {
   align-items: start;
 }
 
-/* Schedule Speakers Section (Integrated inside .schedule-card) */
-.schedule-speakers-section {
+/* Schedule Speakers Collapsible Section (Integrated inside .schedule-card) */
+.schedule-speakers-details {
   grid-column: 1 / -1;
   border-top: 1px solid var(--color-border-card);
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
   margin-top: 0.75rem;
   width: 100%;
 }
 
-.schedule-speakers-header {
-  margin-bottom: 1.5rem;
+.schedule-speakers-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  padding: 0.35rem 0.25rem;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+  gap: 1rem;
+}
+
+.schedule-speakers-summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .schedule-speakers-title {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   color: var(--color-text-dark);
-  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.speakers-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-primary-purple);
+  background-color: var(--color-hero-bg);
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--radius-pill);
 }
 
 .schedule-speakers-subtitle {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
+}
+
+.summary-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary-purple);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-hero-bg);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.summary-action:hover {
+  background-color: #ede7fb;
+  color: #4f46e5;
+}
+
+.summary-action-text::after {
+  content: "Ver oradores";
+}
+
+.summary-chevron {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-primary-purple);
+}
+
+.schedule-speakers-details[open] .summary-chevron {
+  transform: rotate(180deg);
+}
+
+.schedule-speakers-details[open] .summary-action-text::after {
+  content: "Ocultar oradores";
+}
+
+.schedule-speakers-details[open] .schedule-speakers-grid {
+  margin-top: 1.25rem;
+  animation: speakersFadeIn 0.25s ease-out;
+}
+
+@keyframes speakersFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .schedule-speakers-grid {
