@@ -130,3 +130,14 @@ A secção de patrocinadores e o respetivo link na barra de navegação podem se
 [params]
   enable_sponsors = false # Defina como true para exibir ou false para ocultar
 ```
+
+### 4. Configurar Bilhetes (Landing Area)
+O link de compra de bilhetes (Eventbrite) e o texto do botão na área principal (Hero) são configuráveis em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+
+```toml
+[params]
+  tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
+  tickets_button_text = 'Garantir Bilhete' # Texto apresentado no botão
+```
+*(Caso `tickets_url` seja deixado vazio ou removido, o botão não será apresentado).*
+
