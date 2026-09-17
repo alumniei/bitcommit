@@ -11,7 +11,7 @@ disableKinds = ['taxonomy', 'term']
   location_city = 'Porto'
   location_address = 'R. da Constituição 346, 4200-192 Porto'
   tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
-  tickets_button_text = 'Garante o teu lugar'
+  tickets_button_text = 'Garante já o teu bilhete'
   email = 'geral@alumniei.pt'
   copyright_year = '2026'
   enable_sponsors = false
