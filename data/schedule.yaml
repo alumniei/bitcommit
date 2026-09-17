@@ -19,7 +19,8 @@
   speakers_subtitle: "Conhece os especialistas que vão liderar a discussão."
   speakers:
     - name: "Luís Tavares"
-      role: "Orador"
+      company: "SpaceXAI"
+      role: "Building"
       image: "/images/speakers/luis-tavares.png"
       linkedin: "https://www.linkedin.com/in/luis-tavares18"
     - name: "Emília Moreira"
