@@ -137,7 +137,7 @@ O link de compra de bilhetes (Eventbrite) e o texto do botão na área principal
 ```toml
 [params]
   tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
-  tickets_button_text = 'Garantir Bilhete' # Texto apresentado no botão
+  tickets_button_text = 'Garante o teu lugar' # Texto apresentado no botão
 ```
 *(Caso `tickets_url` seja deixado vazio ou removido, o botão não será apresentado).*
 
