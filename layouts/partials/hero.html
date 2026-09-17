@@ -4,5 +4,19 @@
       <img src="{{ "images/logo-light-cropped-no-background.png" | relURL }}" alt="BitCommit 2026" class="hero-logo">
     </div>
     <h1 class="hero-date">{{ site.Params.event_date_display | default "10 Outubro 2026" }}</h1>
+    {{ $ticketsUrl := site.Params.tickets_url | default site.Params.ticket_url }}
+    {{ if $ticketsUrl }}
+    <div class="hero-actions">
+      <a href="{{ $ticketsUrl }}" class="btn-ticket" target="_blank" rel="noopener noreferrer">
+        <svg class="icon-ticket" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+          <path d="M13 5v2"/>
+          <path d="M13 17v2"/>
+          <path d="M13 11v2"/>
+        </svg>
+        <span>{{ site.Params.tickets_button_text | default (site.Params.tickets_text | default "Garante já o teu bilhete") }}</span>
+      </a>
+    </div>
+    {{ end }}
   </div>
 </section>

@@ -130,3 +130,39 @@ A secção de patrocinadores e o respetivo link na barra de navegação podem se
 [params]
   enable_sponsors = false # Defina como true para exibir ou false para ocultar
 ```
+
+### 4. Configurar Bilhetes (Landing Area)
+O link de compra de bilhetes (Eventbrite) e o texto do botão na área principal (Hero) são configuráveis em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+
+```toml
+[params]
+  tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
+  tickets_button_text = 'Garante já o teu bilhete' # Texto apresentado no botão
+```
+*(Caso `tickets_url` seja deixado vazio ou removido, o botão não será apresentado).*
+
+### 5. Configurar Oradores na Agenda (Feature Toggle)
+A exibição dos oradores associados a cada sessão do programa pode ser ativada ou desativada globalmente através do parâmetro `enable_speakers` no ficheiro [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+
+```toml
+[params]
+  enable_speakers = true # true para apresentar oradores na agenda, false para ocultar
+```
+
+Os oradores de cada sessão são definidos diretamente em [data/schedule.yaml](file:///Users/pedrodias/Projects/bitcommit/data/schedule.yaml):
+
+```yaml
+- time: "15:30"
+  type: "Painel"
+  title: "Round Table: Como a IA tem mudado o nosso trabalho"
+  speakers_title: "Speakers"
+  speakers_subtitle: "Meet the panelists leading the discussion."
+  speakers:
+    - name: "Nome do Orador"
+      company: "Empresa"
+      role: "Speaker" # ou "Moderator"
+      bio: "Breve descrição biográfica."
+      image: "/images/speakers/nome.png"
+      linkedin: "https://linkedin.com/in/..."
+```
+
