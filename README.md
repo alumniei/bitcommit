@@ -166,15 +166,28 @@ Os oradores de cada sessão são definidos diretamente em [data/schedule.yaml](f
       linkedin: "https://linkedin.com/in/..."
 ```
 
-### 6. Configurar Local e Link do Google Maps
-O local do evento e o link de acesso ao Google Maps podem ser configurados em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+### 6. Configurar Local, Morada e Google Maps
+O local do evento, a morada e o link para o Google Maps são configurados em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
 
 ```toml
 [params]
   location_venue = 'Founders Founders'
   location_city = 'Porto'
-  location_address = 'R. da Constituição 346, 4200-192 Porto'
+  location_address = 'Rua de Godim 389, 4300-240 Porto'
   location_maps_url = 'https://maps.app.goo.gl/bKAY6yicGjBpS5H96'
 ```
 *(Quando `location_maps_url` está preenchido, o cartão do local na secção "Data e Local" torna-se um link interativo para o Google Maps).*
+
+### 7. Configurar Secção "Como Chegar" (Direções)
+A secção colapsável de direções de transporte (focada no acesso a partir da **Estação de Campanhã**) pode ser ativada ou desativada via `enable_directions` em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+
+```toml
+[params]
+  enable_directions = true # true para exibir direções na secção do Local, false para ocultar
+```
+
+Os meios de transporte e detalhes são configurados em [data/directions.yaml](file:///Users/pedrodias/Projects/bitcommit/data/directions.yaml):
+- Metro e Comboio (Estação de Campanhã)
+- Autocarro e Terminal Intermodal (TIC)
+- Carro e Estacionamento (acesso VCI e parque do TIC)
 

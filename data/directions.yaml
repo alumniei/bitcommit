@@ -1,0 +1,25 @@
+title: "Como Chegar"
+subtitle: "A Founders Founders fica a apenas ~5 minutos a pé da Estação de Campanhã."
+button_text: "Abrir Rota no Google Maps"
+
+options:
+  - id: "metro-comboio"
+    icon: "train"
+    title: "Metro & Comboio"
+    badge: "~5 min a pé"
+    highlight: "Estação de Campanhã"
+    description: "Servida pelas Linhas A, B, C, E e F do Metro do Porto e por todas as ligações ferroviárias da CP (Urbanos, Regionais, Intercidades e Alfa Pendular)."
+
+  - id: "autocarro"
+    icon: "bus"
+    title: "Autocarro & TIC"
+    badge: "Terminal Intermodal"
+    highlight: "Terminal Intermodal de Campanhã (TIC)"
+    description: "Acesso a autocarros de longo curso (Rede Expressos, Flixbus, etc.) e linhas urbanas da STCP (ex: 205, 206, 207 e 400)."
+
+  - id: "carro"
+    icon: "car"
+    title: "Carro & Estacionamento"
+    badge: "VCI / Freixo"
+    highlight: "Via VCI (Saída Campanhã / Freixo)"
+    description: "Acesso rápido pela VCI. Estacionamento disponível no parque subterrâneo do Terminal Intermodal de Campanhã (TIC) ou na envolvente da Rua de Godim."
