@@ -15,7 +15,7 @@ options:
     title: "Autocarro & TIC"
     badge: "Terminal Intermodal"
     highlight: "Terminal Intermodal de Campanhã (TIC)"
-    description: "Acesso a autocarros de longo curso (Rede Expressos, Flixbus, etc.) e linhas urbanas da STCP (ex: 205, 206, 207 e 400)."
+    description: "Acesso a autocarros de longo curso (Rede Expressos, Flixbus, etc.) e linhas STCP (ex: 205, 206 com paragem em Pinto Bessa, 207, 403 e 404 direta ao Hospital S. João)."
 
   - id: "carro"
     icon: "car"
