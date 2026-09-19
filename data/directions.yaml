@@ -1,6 +1,5 @@
 title: "Como Chegar"
-subtitle: "A Founders Founders fica a apenas ~5 minutos a pé da Estação de Campanhã."
-button_text: "Abrir Rota no Google Maps"
+subtitle: "A Founders Founders fica a cerca de 5 minutos a pé da Estação de Campanhã."
 
 options:
   - id: "metro-comboio"
@@ -12,14 +11,7 @@ options:
 
   - id: "autocarro"
     icon: "bus"
-    title: "Autocarro & TIC"
-    badge: "Terminal Intermodal"
-    highlight: "Terminal Intermodal de Campanhã (TIC)"
-    description: "Acesso a autocarros de longo curso (Rede Expressos, Flixbus, etc.) e linhas STCP (ex: 205, 206 com paragem em Pinto Bessa, 207, 403 e 404 direta ao Hospital S. João)."
-
-  - id: "carro"
-    icon: "car"
-    title: "Carro & Estacionamento"
-    badge: "VCI / Freixo"
-    highlight: "Via VCI (Saída Campanhã / Freixo)"
-    description: "Acesso rápido pela VCI. Estacionamento disponível no parque subterrâneo do Terminal Intermodal de Campanhã (TIC) ou na envolvente da Rua de Godim."
+    title: "Autocarro (STCP)"
+    badge: "Dos Aliados"
+    highlight: "Paragem S. Pedro da Cova"
+    description: "A partir dos Aliados, apanhar os autocarros 700, 800, 801 ou 305 até à paragem S. Pedro da Cova (muito perto da Founders Founders)."

@@ -583,12 +583,12 @@ a.info-card.info-card-link:hover .info-card-action {
 
 .directions-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 0.25rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .directions-grid {
     grid-template-columns: 1fr;
   }
@@ -667,15 +667,15 @@ a.info-card.info-card-link:hover .info-card-action {
 .directions-footer-action {
   margin-top: 1.25rem;
   display: flex;
+  gap: 0.75rem;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .btn-directions-maps {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--color-primary-purple);
-  color: #ffffff;
   padding: 0.65rem 1.15rem;
   border-radius: var(--radius-pill);
   font-size: 0.8125rem;
@@ -684,10 +684,27 @@ a.info-card.info-card-link:hover .info-card-action {
   transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
-.btn-directions-maps:hover {
+.btn-directions-maps.btn-google-maps {
+  background: var(--color-primary-purple);
+  color: #ffffff;
+}
+
+.btn-directions-maps.btn-google-maps:hover {
   background: #5558e6;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+  color: #ffffff;
+}
+
+.btn-directions-maps.btn-apple-maps {
+  background: #18181b;
+  color: #ffffff;
+}
+
+.btn-directions-maps.btn-apple-maps:hover {
+  background: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 

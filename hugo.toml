@@ -11,6 +11,7 @@ disableKinds = ['taxonomy', 'term']
   location_city = 'Porto'
   location_address = 'Rua de Godim 389, 4300-240 Porto'
   location_maps_url = 'https://maps.app.goo.gl/bKAY6yicGjBpS5H96'
+  location_apple_maps_url = 'https://maps.apple/p/Vj0ne5a.fXqogf'
   tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
   tickets_button_text = 'Garante já o teu bilhete'
   email = 'geral@alumniei.pt'

@@ -167,7 +167,7 @@ Os oradores de cada sessão são definidos diretamente em [data/schedule.yaml](f
 ```
 
 ### 6. Configurar Local, Morada e Google Maps
-O local do evento, a morada e o link para o Google Maps são configurados em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+O local do evento, a morada e os links para mapas (Google Maps e Apple Maps) são configurados em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
 
 ```toml
 [params]
@@ -175,11 +175,12 @@ O local do evento, a morada e o link para o Google Maps são configurados em [hu
   location_city = 'Porto'
   location_address = 'Rua de Godim 389, 4300-240 Porto'
   location_maps_url = 'https://maps.app.goo.gl/bKAY6yicGjBpS5H96'
+  location_apple_maps_url = 'https://maps.apple/p/Vj0ne5a.fXqogf'
 ```
-*(Quando `location_maps_url` está preenchido, o cartão do local na secção "Data e Local" torna-se um link interativo para o Google Maps).*
+*(Quando preenchidos, os botões de rota para Google Maps e Apple Maps são apresentados na secção de direções).*
 
 ### 7. Configurar Secção "Como Chegar" (Direções)
-A secção colapsável de direções de transporte (focada no acesso a partir da **Estação de Campanhã**) pode ser ativada ou desativada via `enable_directions` em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+A secção colapsável de direções de transporte pode ser ativada ou desativada via `enable_directions` em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
 
 ```toml
 [params]
@@ -188,6 +189,5 @@ A secção colapsável de direções de transporte (focada no acesso a partir da
 
 Os meios de transporte e detalhes são configurados em [data/directions.yaml](file:///Users/pedrodias/Projects/bitcommit/data/directions.yaml):
 - Metro e Comboio (Estação de Campanhã)
-- Autocarro e Terminal Intermodal (TIC)
-- Carro e Estacionamento (acesso VCI e parque do TIC)
+- Autocarro STCP (linhas 700, 800, 801, 305 dos Aliados com paragem em S. Pedro da Cova)
 
