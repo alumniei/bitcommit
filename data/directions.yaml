@@ -8,7 +8,7 @@ options:
     title: "Metro & Comboio"
     badge: "~5 min a pé"
     highlight: "Estação de Campanhã"
-    description: "Servida pelas Linhas A, B, C, E e F do Metro do Porto e por todas as ligações ferroviárias da CP (Urbanos, Regionais, Intercidades e Alfa Pendular)."
+    description: "Servida pelas Linhas A, B, C e F do Metro do Porto e por todas as ligações ferroviárias da CP (Urbanos, Regionais, Intercidades e Alfa Pendular)."
 
   - id: "autocarro"
     icon: "bus"
