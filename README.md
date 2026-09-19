@@ -166,3 +166,15 @@ Os oradores de cada sessão são definidos diretamente em [data/schedule.yaml](f
       linkedin: "https://linkedin.com/in/..."
 ```
 
+### 6. Configurar Local e Link do Google Maps
+O local do evento e o link de acesso ao Google Maps podem ser configurados em [hugo.toml](file:///Users/pedrodias/Projects/bitcommit/hugo.toml):
+
+```toml
+[params]
+  location_venue = 'Founders Founders'
+  location_city = 'Porto'
+  location_address = 'R. da Constituição 346, 4200-192 Porto'
+  location_maps_url = 'https://maps.app.goo.gl/bKAY6yicGjBpS5H96'
+```
+*(Quando `location_maps_url` está preenchido, o cartão do local na secção "Data e Local" torna-se um link interativo para o Google Maps).*
+
