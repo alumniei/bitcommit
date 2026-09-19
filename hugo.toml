@@ -9,11 +9,13 @@ disableKinds = ['taxonomy', 'term']
   event_time = '14:30'
   location_venue = 'Founders Founders'
   location_city = 'Porto'
-  location_address = 'R. da Constituição 346, 4200-192 Porto'
+  location_address = 'Rua de Godim 389, 4300-240 Porto'
   location_maps_url = 'https://maps.app.goo.gl/bKAY6yicGjBpS5H96'
+  location_apple_maps_url = 'https://maps.apple/p/Vj0ne5a.fXqogf'
   tickets_url = 'https://www.eventbrite.com/e/bilhetes-bitcommit-2001083276949?aff=oddtdtcreator'
   tickets_button_text = 'Garante já o teu bilhete'
   email = 'geral@alumniei.pt'
   copyright_year = '2026'
   enable_sponsors = false
   enable_speakers = true
+  enable_directions = true
