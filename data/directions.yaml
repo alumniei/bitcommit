@@ -14,4 +14,11 @@ options:
     title: "Autocarro (STCP)"
     badge: "Dos Aliados"
     highlight: "Paragem S. Pedro da Cova"
-    description: "A partir dos Aliados, apanhar os autocarros 700, 800, 801 ou 305 até à paragem S. Pedro da Cova (muito perto da Founders Founders)."
+    description: "A partir dos Aliados, apanhar os autocarros 700, 800 ou 801 até à paragem S. Pedro da Cova (muito perto da Founders Founders)."
+
+  - id: "carro"
+    icon: "car"
+    title: "Carro"
+    badge: "Estacionamento"
+    highlight: "Estacionamento na zona"
+    description: "Existe estacionamento disponível na zona e na envolvente da Founders Founders (Rua de Godim)."
