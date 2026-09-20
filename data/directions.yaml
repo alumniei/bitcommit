@@ -1,0 +1,24 @@
+title: "Como Chegar"
+subtitle: "A Founders Founders fica a cerca de 10 minutos a pé da Estação de Campanhã."
+
+options:
+  - id: "metro-comboio"
+    icon: "train"
+    title: "Metro & Comboio"
+    badge: "~10 min a pé"
+    highlight: "Estação de Campanhã"
+    description: "Servida pelas Linhas A, B, C e F do Metro do Porto e por todas as ligações ferroviárias da CP (Urbanos, Regionais, Intercidades e Alfa Pendular)."
+
+  - id: "autocarro"
+    icon: "bus"
+    title: "Autocarro (STCP)"
+    badge: "Dos Aliados"
+    highlight: "Paragem S. Pedro da Cova"
+    description: "A partir dos Aliados, apanhar os autocarros 700, 800 ou 801 até à paragem S. Pedro da Cova (muito perto da Founders Founders)."
+
+  - id: "carro"
+    icon: "car"
+    title: "Carro"
+    badge: "Estacionamento"
+    highlight: "Estacionamento na zona"
+    description: "Existe estacionamento disponível na zona e na envolvente da Founders Founders (Rua de Godim)."
