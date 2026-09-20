@@ -1,11 +1,11 @@
 title: "Como Chegar"
-subtitle: "A Founders Founders fica a cerca de 5 minutos a pé da Estação de Campanhã."
+subtitle: "A Founders Founders fica a cerca de 10 minutos a pé da Estação de Campanhã."
 
 options:
   - id: "metro-comboio"
     icon: "train"
     title: "Metro & Comboio"
-    badge: "~5 min a pé"
+    badge: "~10 min a pé"
     highlight: "Estação de Campanhã"
     description: "Servida pelas Linhas A, B, C e F do Metro do Porto e por todas as ligações ferroviárias da CP (Urbanos, Regionais, Intercidades e Alfa Pendular)."
 
