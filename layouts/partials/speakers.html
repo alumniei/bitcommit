@@ -25,7 +25,7 @@
             <p class="speaker-talk"><strong>Sessão:</strong> {{ .talk_title }}</p>
           {{ end }}
           {{ if .bio }}
-            <p class="speaker-bio">{{ .bio }}</p>
+            <p class="speaker-bio">{{ .bio | safeHTML }}</p>
           {{ end }}
         </div>
       </article>

@@ -63,7 +63,7 @@
                   </div>
                 {{ end }}
                 {{ if .bio }}
-                  <p class="agenda-speaker-bio">{{ .bio }}</p>
+                  <p class="agenda-speaker-bio">{{ .bio | safeHTML }}</p>
                 {{ end }}
                 {{ if .linkedin }}
                   <a href="{{ .linkedin }}" target="_blank" rel="noopener noreferrer" class="agenda-speaker-linkedin" aria-label="{{ .name }} LinkedIn">

@@ -1012,6 +1012,19 @@ a.info-card.info-card-link:hover .info-card-action {
   flex-grow: 1;
 }
 
+.agenda-speaker-bio a,
+.speaker-bio a {
+  color: var(--color-primary-purple);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s ease;
+}
+
+.agenda-speaker-bio a:hover,
+.speaker-bio a:hover {
+  color: var(--color-kicker);
+}
+
 .agenda-speaker-linkedin {
   display: inline-flex;
   align-items: center;
