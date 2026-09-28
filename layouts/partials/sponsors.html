@@ -11,7 +11,7 @@
         {{ range . }}
         <div class="sponsor-card-gold">
           {{ if .logo }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="sponsor-card-link">
               <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="sponsor-logo-img">
             </a>
           {{ else }}
@@ -31,7 +31,7 @@
         {{ range . }}
         <div class="sponsor-card-silver">
           {{ if .logo }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="sponsor-card-link">
               <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="sponsor-logo-img">
             </a>
           {{ else }}
@@ -51,7 +51,7 @@
         {{ range . }}
         <div class="sponsor-card-bronze">
           {{ if .logo }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="sponsor-card-link">
               <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="sponsor-logo-img">
             </a>
           {{ else }}

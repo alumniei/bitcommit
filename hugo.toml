@@ -16,6 +16,6 @@ disableKinds = ['taxonomy', 'term']
   tickets_button_text = 'Garante já o teu bilhete'
   email = 'geral@alumniei.pt'
   copyright_year = '2026'
-  enable_sponsors = false
+  enable_sponsors = true
   enable_speakers = true
   enable_directions = true
