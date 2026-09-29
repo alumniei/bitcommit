@@ -37,11 +37,14 @@
       role: "Moderadora"
       bio: "A biomedical engineer by training, with a Master's degree in the field, Maria João Martins has built her career in Data & AI. At Siemens, she designs and builds data and AI solutions, from pipelines and models to insights that non-technical teams can put to use. She co-founded and leads the Young AI Leaders Community Viseu Hub, a registered NGO within the AI for Good network led by the UN's International Telecommunication Union. The hub brings together more than 35 volunteers, most of them engineers and researchers, to bridge the gap between those who build AI and the communities it affects. It does so by designing solutions with local partners for real community challenges, and through a free AI literacy programme that has helped more than 400 people across seven institutions understand the technology and engage with it critically. She believes AI should serve the social good, and be built with people, not just for them."
       image: "/images/speakers/maria-joao-martins.jpeg"
+      linkedin: "https://www.linkedin.com/in/maria-joao-martins/"
 
 - time: "17:00"
   type: "Networking"
   title: "Show & Tell + Grupos de Discussão"
   description: "Com comida e cocktails a acompanhar, este momento de networking inclui também a mostra de projetos pessoais que façam uso de AI e discussões em grupo sobre questões controversas relacionadas com a IA."
+  showcase_link: "#show-and-tell"
+  showcase_link_text: "Inscreve o teu projeto"
 
 - time: "19:00"
   type: "Encerramento"

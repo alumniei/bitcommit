@@ -19,3 +19,6 @@ disableKinds = ['taxonomy', 'term']
   enable_sponsors = true
   enable_speakers = true
   enable_directions = true
+  enable_showcase = true
+  showcase_form_url = 'https://forms.gle/wG5Vp52beg8xRm8o7'
+  showcase_button_text = 'Inscrever Projeto no Show & Tell'

@@ -4,6 +4,9 @@
   {{ partial "event_info.html" . }}
   {{ partial "about.html" . }}
   {{ partial "schedule.html" . }}
+  {{ if site.Params.enable_showcase }}
+    {{ partial "showcase.html" . }}
+  {{ end }}
   {{ if site.Params.enable_sponsors }}
     {{ partial "sponsors.html" . }}
   {{ end }}

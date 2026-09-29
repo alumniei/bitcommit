@@ -1,0 +1,144 @@
+{{ $data := site.Data.showcase }}
+{{ $formUrl := site.Params.showcase_form_url | default (index $data "form_url") }}
+{{ $buttonText := site.Params.showcase_button_text | default (index $data "button_text") | default "Inscrever Projeto no Show & Tell" }}
+
+<section class="section-showcase" id="show-and-tell">
+  <div class="container">
+    <div class="showcase-header">
+      <span class="section-kicker">{{ index $data "kicker" | default "Show & Tell" }}</span>
+      <h2 class="showcase-title">{{ index $data "title" | default "Mostra o que construíste com IA!" }}</h2>
+      <p class="showcase-subtitle">
+        {{ index $data "subtitle" | default "Queres mostrar um projeto que desenvolveste ou ajudaste a desenvolver e que usa IA? O Show & Tell do BitCommit é a oportunidade perfeita para dar a conhecer o que construíste, explicar como o fizeste e partilhar a tua experiência com a comunidade!" }}
+      </p>
+    </div>
+
+    <!-- Perks Grid -->
+    <div class="showcase-perks-grid">
+      {{ range index $data "perks" }}
+      <div class="showcase-perk-card">
+        <div class="showcase-perk-icon-wrap" aria-hidden="true">
+          {{ if or (eq .icon "vote") (eq .icon "trophy") }}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 12 2 2 4-4"/>
+              <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"/>
+              <path d="M22 19H2"/>
+            </svg>
+          {{ else if eq .icon "dinner" }}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+              <path d="M7 2v20"/>
+              <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+            </svg>
+          {{ else if eq .icon "booth" }}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/>
+              <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/>
+              <path d="M12 3v6"/>
+            </svg>
+          {{ else }}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          {{ end }}
+        </div>
+        <div class="showcase-perk-text">
+          <h3 class="showcase-perk-title">{{ .title }}</h3>
+          <p class="showcase-perk-desc">{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Collapsible Requirements & Criteria (Accordion) -->
+    <details class="showcase-accordion">
+      <summary class="showcase-accordion-summary">
+        <div class="summary-info">
+          <span class="showcase-accordion-title">
+            <svg class="title-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+            <span>Requisitos do projeto e critérios de seleção</span>
+          </span>
+        </div>
+        <div class="summary-action">
+          <span class="summary-action-text"></span>
+          <svg class="summary-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m6 9 6 6 6-6"/>
+          </svg>
+        </div>
+      </summary>
+
+      <div class="showcase-accordion-content">
+        <div class="showcase-details-grid">
+          <!-- Requisitos -->
+          <div class="showcase-details-card">
+            <div class="showcase-details-header">
+              <div class="details-icon-badge" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 11l3 3L22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+              <h4 class="showcase-details-title">{{ index (index $data "requirements") "title" | default "Requisitos do Projeto" }}</h4>
+            </div>
+            <p class="showcase-details-sub">{{ index (index $data "requirements") "description" }}</p>
+            <ul class="showcase-checklist">
+              {{ range index (index $data "requirements") "items" }}
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+
+          <!-- Critérios -->
+          <div class="showcase-details-card">
+            <div class="showcase-details-header">
+              <div class="details-icon-badge" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <h4 class="showcase-details-title">{{ index (index $data "criteria") "title" | default "Critérios de Seleção" }}</h4>
+            </div>
+            <p class="showcase-details-sub">{{ index (index $data "criteria") "description" }}</p>
+            <ul class="showcase-criteria-list">
+              {{ range index (index $data "criteria") "items" }}
+              <li>
+                <strong>{{ .name }}:</strong> <span>{{ .text }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- CTA Callout Block -->
+    {{ if $formUrl }}
+    <div class="showcase-cta-card">
+      <div class="showcase-cta-content">
+        <h3 class="showcase-cta-heading">Queres mostrar o teu projeto à comunidade?</h3>
+        <p class="showcase-cta-text">
+          As inscrições estão abertas a todos os participantes. Lembra-te: apenas 10 bancas disponíveis e todos os selecionados têm jantar gratuito garantido no evento!
+        </p>
+        <div class="showcase-cta-actions">
+          <a href="{{ $formUrl }}" target="_blank" rel="noopener noreferrer" class="btn-showcase-cta">
+            <span>{{ $buttonText }}</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>

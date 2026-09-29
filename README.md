@@ -36,14 +36,21 @@ O website é uma *single-page application* limpa e moderna focada na agenda e in
      - `18:30` — Encerramento (Sorteios e despedida)
    - Integração direta dos perfis dos oradores (avatar, nome e cargo) dentro de cada cartão da sessão.
 
-5. **Parceiros (Sponsors)**:
+5. **Show & Tell (Projetos com IA)**:
+   - Apresentação da mostra de projetos desenvolvidos pela comunidade com recurso a Inteligência Artificial.
+   - Benefícios em destaque: votação pelos participantes em várias categorias, jantar gratuito incluído para selecionados, bancas dedicadas e limite de 10 vagas.
+   - Requisitos técnicos e critérios de seleção detalhados.
+   - Call to action direto para o formulário de inscrição (Google Forms).
+   - Pode ser configurado/ocultado via `enable_showcase` e `showcase_form_url` em `hugo.toml`.
+
+6. **Parceiros (Sponsors)**:
    - Grelha hierarquizada com suporte para logótipos e cartões de placeholder:
      - **Gold:** 2 patrocinadores (cartões com contorno âmbar).
      - **Silver:** 3 patrocinadores.
      - **Bronze:** 4 patrocinadores.
    - Pode ser ocultada/apresentada através do feature toggle `enable_sponsors` em `hugo.toml`.
 
-6. **Rodapé & Contactos**:
+7. **Rodapé & Contactos**:
    - Email institucional (`geral@alumniei.pt`) e localização.
    - Nota de copyright oficial do BitCommit.
 
@@ -57,15 +64,17 @@ O website é uma *single-page application* limpa e moderna focada na agenda e in
    - O pipeline de estilos é gerido nativamente pelo Hugo Pipes (`resources.Get`, `resources.Minify` e `resources.Fingerprint`), sem qualquer necessidade de Node.js/npm.
 
 2. **Componentização Modular (`layouts/partials/`)**:
-   - `hero.html` — Hero e barra de navegação pill.
+   - `hero.html` — Hero, pill de anúncio do concurso e barra de navegação pill.
    - `event_info.html` — Cartões de data, hora e local.
    - `about.html` — Texto descritivo.
-   - `schedule.html` — Timeline com integração de oradores.
+   - `schedule.html` — Timeline com integração de oradores e callout de Show & Tell.
+   - `showcase.html` — Secção completa do Show & Tell e inscrição de projetos.
    - `sponsors.html` — Níveis de patrocinadores (Gold, Silver, Bronze).
    - `footer.html` — Contactos e rodapé.
 
 3. **Separação de Dados (`data/`)**:
    - `data/schedule.yaml`: Sessões, horários, tipos e identificadores de oradores.
+   - `data/showcase.yaml`: Textos, benefícios, requisitos e critérios do Show & Tell.
    - `data/speakers.yaml`: Dados dos oradores (nome, empresa, cargo, foto e bio).
    - `data/sponsors.yaml`: Patrocinadores categorizados por níveis.
 

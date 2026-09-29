@@ -1,0 +1,39 @@
+kicker: "Show & Tell"
+title: "Mostra o que construíste com IA!"
+subtitle: "Queres mostrar um projeto que desenvolveste ou ajudaste a desenvolver e que usa IA? O Show & Tell do BitCommit é a oportunidade perfeita para dar a conhecer o que construíste, explicar como o fizeste e partilhar a tua experiência com a comunidade!"
+form_url: "https://forms.gle/wG5Vp52beg8xRm8o7"
+button_text: "Inscrever Projeto no Google Forms"
+spots_badge: "Vagas limitadas a 10 projetos"
+
+perks:
+  - icon: "vote"
+    title: "Votação dos Participantes"
+    description: "Durante o evento, haverá uma votação por todos os participantes em várias categorias para eleger os projetos favoritos."
+  - icon: "dinner"
+    title: "Jantar Incluído"
+    description: "Todos os participantes cujos projetos forem selecionados para o Show & Tell terão acesso gratuito ao jantar no final do evento."
+  - icon: "booth"
+    title: "Banca Própria no Evento"
+    description: "Cada projeto selecionado terá uma banca própria para demonstrar a solução, responder a perguntas e trocar ideias com a comunidade."
+  - icon: "clock"
+    title: "10 Vagas Disponíveis"
+    description: "Espaço limitado a 10 projetos. Em caso de avaliação semelhante, será dada prioridade às inscrições submetidas mais cedo."
+
+requirements:
+  title: "Requisitos do Projeto"
+  description: "Para inscreveres o teu projeto, deves cumprir os seguintes critérios:"
+  items:
+    - "Utilizar Inteligência Artificial de forma relevante (LLMs, Computer Vision, Machine Learning, agentes autónomos, etc.)."
+    - "Ter pelo menos uma funcionalidade ou componente prático que recorra a IA."
+    - "A pessoa que inscreve o projeto deve ter contribuído ativamente para o seu desenvolvimento."
+
+criteria:
+  title: "Critérios de Seleção"
+  description: "Caso o número de inscrições ultrapasse as vagas disponíveis, os projetos serão avaliados segundo:"
+  items:
+    - name: "Originalidade, criatividade e inovação"
+      text: "O quão original é a ideia e a abordagem técnica utilizada."
+    - name: "Relevância e impacto"
+      text: "O problema real que o projeto procura resolver e o seu potencial impacto."
+    - name: "Data de submissão"
+      text: "Prioridade às inscrições submetidas mais cedo em caso de projetos com avaliação semelhante."
