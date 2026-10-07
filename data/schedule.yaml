@@ -42,6 +42,7 @@
     - name: "Luís Tavares"
       company: "SpaceXAI"
       role: "Software Engineer"
+      bio: "Originalmente do Porto, vive agora em São Francisco onde é engenheiro na SpaceXAI e trabalha no Grok Bot. Antes disso, trabalhou em produtos de cloud e bases de dados na Databricks, Neon e SingleStore. Sempre teve um interesse especial por bases de dados e sistemas distribuídos. Mais recentemente, tem pensado bastante sobre a forma como a AI está a mudar não só a maneira como construímos software, mas também o que significa ser engenheiro de software."
       image: "/images/speakers/luis-tavares.png"
       linkedin: "https://www.linkedin.com/in/luis-tavares18"
 
