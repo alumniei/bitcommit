@@ -6,8 +6,19 @@
 
 - time: "15:00"
   type: "Palestra"
-  title: "A ser anunciado"
-  description: "Tema e orador a ser anunciados brevemente."
+  title: "Fazer melhor, explicar melhor: a IA ao serviço do UX/UI"
+  description: "A experiência real de uma designer com a IA: depois da curva de aprendizagem, passou a ser possível trabalhar com mais rigor e criar materiais claros, como um Design System e testes de usabilidade, que tornam mais simples partilhar conhecimento com a equipa."
+  speaker_id: ""
+  speakers_title: "Oradora"
+  speakers_subtitle: "Conhece a oradora desta sessão."
+  speakers:
+    - name: "Carla Amaral"
+      company: "BrightFactory"
+      role: "UX/UI Designer"
+      bio: "Carla Amaral é designer UX/UI na BrightFactory, onde desenha experiências para um assistente conversacional com IA. Formou-se em Design de Produto na ESAD e fez o seu percurso entre design gráfico, web e motion, passando pela Faculdade de Medicina da Universidade do Porto. Especializou-se em UX/UI na Universidade do Porto Digital. Hoje usa a IA no dia a dia para construir Design Systems, preparar testes de usabilidade e partilhar conhecimento com a equipa de forma mais clara."
+      image: "/images/speakers/carla_amaral.jpeg"
+      linkedin: "https://www.linkedin.com/in/carla-cruz-amaral/"
+
 
 - time: "15:30"
   type: "Painel"
